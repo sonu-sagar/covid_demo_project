@@ -33,8 +33,8 @@ class MyComponent2 extends React.Component {
             chart: {
                 theme: "fusion",
                 caption: "Timeline of covid19",
-                xAxisname: "Quarter",
-                yAxisName: "Revenues (In USD)",
+                xAxisname: "Date",
+                yAxisName: "Total Cases",
                 numberPrefix: "",
                 plotFillAlpha: "80",
                 divLineIsDashed: "1",
