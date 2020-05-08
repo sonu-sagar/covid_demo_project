@@ -65,17 +65,8 @@ class Home extends React.Component{
     fetch(ur)
 		.then(response => response.json())
 		.then(data => {
-      var dataPoints = [];
       var x;
-      var l=data.length;
       for(x in data["Stats"]){
-        if(x !== "TotalCases"){
-          dataPoints.push({
-              label: x,
-              value: data["Stats"][x]
-          });
-        }
-      }
       this.setState({data: data, name: data[0]["Name"]});
 		});
   }
@@ -85,7 +76,7 @@ class Home extends React.Component{
     let ur;
     ur='/country/india?from=2020-05-01&to=2020-05-04'
     //ur='/country/'+this.state.value+'?from='+this.state.from+'&to='+this.state.to;
-    this.setState({url : ur,disp:'false'});
+    this.setState({url : ur});
     this.fetchdailydata(ur);
   }
 

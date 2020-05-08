@@ -10,9 +10,6 @@ charts(FusionCharts);
 class MyComponent2 extends React.Component {
   constructor(props){
     super(props);
-    this.state={
-      type: 'pie2d',
-    }
   }
 
     render() {
