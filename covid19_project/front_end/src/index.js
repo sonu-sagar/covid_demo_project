@@ -65,8 +65,6 @@ class Home extends React.Component{
     fetch(ur)
 		.then(response => response.json())
 		.then(data => {
-      var x;
-      for(x in data["Stats"]){
       this.setState({data: data, name: data[0]["Name"]});
 		});
   }
